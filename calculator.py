@@ -3,36 +3,35 @@ def welcome():
 Welcome to Calculator
 ''')
 
-def calculate():
-    operation = input('''
-Please type in the math operation you would like to complete:
-+ for addition
-- for subtraction
-* for multiplication
-/ for division
-''')
+print('Operation.')
+print('1.Add')
+print('2.Subtract')
+print('3.Multiply')
+print('4.Divide')
 
-    number_1 = int(input('Please enter the first number: '))
-    number_2 = int(input('Please enter the second number: '))
+operation = input('Select an option: ')
 
-    if operation == '+':
-        print('{} + {} = '.format(number_1, number_2))
-        print(number_1 + number_2)
+    number_1 = int(input('Enter your first number: '))
+    number_2 = int(input('Enter your second number: '))
 
-    elif operation == '-':
-        print('{} - {} = '.format(number_1, number_2))
-        print(number_1 - number_2)
+if operation == '1':
+    print('{} + {} = '.format(number_1, number_2))
+    print(number_1 + number_2)
 
-    elif operation == '*':
-        print('{} * {} = '.format(number_1, number_2))
-        print(number_1 * number_2)
+elif operation == '2':
+    print('{} - {} = '.format(number_1, number_2))
+    print(number_1 - number_2)
 
-    elif operation == '/':
-        print('{} / {} = '.format(number_1, number_2))
-        print(number_1 / number_2)
+elif operation == '3':
+    print('{} * {} = '.format(number_1, number_2))
+    print(number_1 * number_2)
 
-    else:
-        print('You have not typed a valid operator, please run the program again.')
+elif operation == '4':
+    print('{} / {} = '.format(number_1, number_2))
+    print(number_1 / number_2)
+
+else:
+    print('You have not typed a valid operator, please run the program again.')
 
 
 def again():
@@ -51,8 +50,8 @@ Please type Y for YES or N for NO.
     else:
         again()
 
-calculate()
 again()
 
 Links:
 # https://www.digitalocean.com/community/tutorials/how-to-make-a-simple-calculator-program-in-python-3
+# https://www.programiz.com/python-programming/examples/calculator
