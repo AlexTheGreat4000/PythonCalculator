@@ -1,7 +1,4 @@
-def welcome():
-    print('''
-Welcome to Calculator
-''')
+print('Welcome to Calculator')
 
 print('Operation.')
 print('1.Add')
