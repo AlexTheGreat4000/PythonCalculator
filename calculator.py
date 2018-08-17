@@ -12,11 +12,15 @@ def multiply(x, y):
 def divide(x, y):
         return x / y
 
+def power(x, y):
+        return x ** y
+
 print('Operation.')
 print('1.Add')
 print('2.Subtract')
 print('3.Multiply')
 print('4.Divide')
+print('5.Power')
 
 operation = input('Select an option: ')
 
@@ -34,6 +38,9 @@ elif operation == '3':
 
 elif operation == '4':
         print(number_1, '/', number_2, '=', divide(number_1, number_2))
+        
+elif operation == '5':
+        print(number_1, '**', number_2, '=', power(number_1, number_2))
 
 else:
     print('You have not typed a valid operator, please run the program again.')
