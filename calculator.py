@@ -45,24 +45,7 @@ elif operation == '5':
 else:
     print('You have not typed a valid operator, please run the program again.')
 
-
-def again():
-
-    calc_again = input('''
-Do you want to calculate again?
-Please type Y for YES or N for NO.
-''')
-
-    if calc_again == 'Y':
-        calculate()
-        
-    elif calc_again == 'N':
-        print('See you later.')
-
-    else:
-        again()
-
-again()
+input('Press enter to quit')
 
 Links:
 # https://www.digitalocean.com/community/tutorials/how-to-make-a-simple-calculator-program-in-python-3
