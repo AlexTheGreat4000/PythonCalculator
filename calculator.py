@@ -20,13 +20,14 @@ def power(x, y):
 def square_root(x):
         return math.sqrt(x)
 
-print('Operation.')
-print('1.Add')
-print('2.Subtract')
-print('3.Multiply')
-print('4.Divide')
-print('5.Power')
-print('6.Square Root')
+print('')
+print('Operations')
+print('1. Add')
+print('2. Subtract')
+print('3. Multiply')
+print('4. Divide')
+print('5. Power')
+print('6. Square Root')
 
 operation = input('Select an option: ')
 
