@@ -33,23 +33,23 @@ operation = input('Select an option: ')
 
 if operation == '1':
         number_1 = int(input('Enter your first number: '))
-        number_2 = int(input('Enter your second number : '))
+        number_2 = int(input('Enter your second number: '))
 
 elif operation == '2':
         number_1 = int(input('Enter your first number: '))
-        number_2 = int(input('Enter your second number : '))
+        number_2 = int(input('Enter your second number: '))
 
 elif operation == '3':
         number_1 = int(input('Enter your first number: '))
-        number_2 = int(input('Enter your second number : '))
+        number_2 = int(input('Enter your second number: '))
 
 elif operation == '4':
         number_1 = int(input('Enter your first number: '))
-        number_2 = int(input('Enter your second number : '))
+        number_2 = int(input('Enter your second number: '))
 
 elif operation == '5':
         number_1 = int(input('Enter your first number: '))
-        number_2 = int(input('Enter your second number : '))
+        number_2 = int(input('Enter your second number: '))
 
 elif operation == '6':
         number = int(input('Enter your number: '))
