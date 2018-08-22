@@ -20,6 +20,9 @@ def power(x, y):
 def square_root(x):
         return math.sqrt(x)
 
+def modulus(x, y):
+        return x % y
+
 print('')
 print('Operations')
 print('1. Add')
@@ -28,6 +31,7 @@ print('3. Multiply')
 print('4. Divide')
 print('5. Power')
 print('6. Square Root')
+print('7. Modulus')
 
 operation = input('Select an option: ')
 
@@ -53,6 +57,10 @@ elif operation == '5':
 
 elif operation == '6':
         number = int(input('Enter your number: '))
+        
+elif operation == '7':
+        number_1 = int(input('Enter your first number: '))
+        number_2 = int(input('Enter your second number: '))
 
 else:
         print('You have not typed a valid operator, please run the program again.')
@@ -74,6 +82,9 @@ elif operation == '5':
 
 elif operation == '6':
         print('√', number, '=', sqaure_root(number))
+
+elif operation == '7':
+        print(number_1, '%', number_2, '=', modulus(number_1, number_2))
 
 input('Press enter to quit')
 
