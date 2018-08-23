@@ -23,6 +23,9 @@ def square_root(x):
 def modulus(x, y):
         return x % y
 
+def floor_division(x, y):
+	return x // y
+
 print('')
 print('Operations')
 print('1. Add')
@@ -32,6 +35,7 @@ print('4. Divide')
 print('5. Power')
 print('6. Square Root')
 print('7. Modulus')
+print('8. Floor Division')
 
 operation = input('Select an option: ')
 
@@ -61,6 +65,10 @@ elif operation == '6':
 elif operation == '7':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+        
+elif operation == '8':
+        number_1 = int(input('Enter your first number: '))
+        number_2 = int(input('Enter your second number: '))
 
 else:
         print('You have not typed a valid operator, please run the program again.')
@@ -85,6 +93,9 @@ elif operation == '6':
 
 elif operation == '7':
         print(number_1, '%', number_2, '=', modulus(number_1, number_2))
+        
+elif operation == '8':
+        print(number_1, '//', number_2, '=', floor_division(number_1, number_2))
 
 input('Press enter to quit')
 
