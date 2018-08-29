@@ -35,7 +35,7 @@ print('mul  (Multiplication)')
 print('div  (Division)')
 print('pow  (Power)')
 print('sq   (Sqaure Root)')
-print('mod  (Modulus)')
+print('mod  (Modulo)')
 print('fd   (Floor Division)')
 
 operation = input('Select an option: ')
