@@ -1,5 +1,3 @@
-import math
-
 print('Welcome to Calculator')
 
 def add(x, y):
@@ -18,6 +16,7 @@ def power(x, y):
         return x ** y
 
 def square_root(x):
+	import math
         return math.sqrt(x)
 
 def modulus(x, y):
