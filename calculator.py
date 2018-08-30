@@ -71,7 +71,7 @@ elif operation == 'fd':
         number_2 = int(input('Enter your second number: '))
 
 else:
-        print('You have not typed a valid operator, please run the program again.')
+        print('Invalid operation')
 
 if operation == 'add':
         print(number_1, "+", number_2, "=", add(number_1, number_2))
