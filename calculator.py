@@ -36,6 +36,7 @@ print('pow  (Power)')
 print('sq   (Sqaure Root)')
 print('mod  (Modulo)')
 print('fd   (Floor Division)')
+print('quit (Close Program)')
 
 operation = input('Select an option: ')
 
@@ -77,6 +78,9 @@ elif operation == 'fd':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '//', number_2, '=', floor_division(number_1, number_2))
+
+elif operation == 'quit':
+	exit()
 
 else:
         print('Invalid operation')
