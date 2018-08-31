@@ -42,60 +42,44 @@ operation = input('Select an option: ')
 if operation == 'add':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, "+", number_2, "=", add(number_1, number_2))
 
 elif operation == 'sub':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, '-', number_2, '=', subtract(number_1, number_2))
 
 elif operation == 'mul':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, '*', number_2, '=', multiply(number_1, number_2))
 
 elif operation == 'div':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, '/', number_2, '=', divide(number_1, number_2))
 
 elif operation == 'pow':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, '**', number_2, '=', power(number_1, number_2))
 
 elif operation == 'sq':
         number = int(input('Enter your number: '))
+	print('√', number, '=', sqaure_root(number))
         
 elif operation == 'mod':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, '%', number_2, '=', modulus(number_1, number_2))
         
 elif operation == 'fd':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
+	print(number_1, '//', number_2, '=', floor_division(number_1, number_2))
 
 else:
         print('Invalid operation')
-
-if operation == 'add':
-        print(number_1, "+", number_2, "=", add(number_1, number_2))
-
-elif operation == 'sub':
-        print(number_1, '-', number_2, '=', subtract(number_1, number_2))
-
-elif operation == 'mul':
-        print(number_1, '*', number_2, '=', multiply(number_1, number_2))
-
-elif operation == 'div':
-        print(number_1, '/', number_2, '=', divide(number_1, number_2))
-        
-elif operation == 'pow':
-        print(number_1, '**', number_2, '=', power(number_1, number_2))
-
-elif operation == 'sq':
-        print('√', number, '=', sqaure_root(number))
-
-elif operation == 'mod':
-        print(number_1, '%', number_2, '=', modulus(number_1, number_2))
-        
-elif operation == 'fd':
-        print(number_1, '//', number_2, '=', floor_division(number_1, number_2))
 
 input('Press enter to quit')
 
