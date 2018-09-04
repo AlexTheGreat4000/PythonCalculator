@@ -83,7 +83,7 @@ elif operation == 'quit':
 	exit()
 
 else:
-        print('Invalid operation')
+        exit()
 
 input('Press enter to quit')
 
