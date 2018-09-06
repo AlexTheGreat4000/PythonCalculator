@@ -1,30 +1,4 @@
 print('Welcome to Calculator')
-
-def add(x, y):
-        return x + y
-
-def subtract(x, y):
-        return x - y
-
-def multiply(x, y):
-        return x * y
-
-def divide(x, y):
-        return x / y
-
-def power(x, y):
-        return x ** y
-
-def square_root(x):
-	import math
-        return math.sqrt(x)
-
-def modulus(x, y):
-        return x % y
-
-def floor_division(x, y):
-	return x // y
-
 print('')
 print('Operations')
 print('')
@@ -43,41 +17,42 @@ operation = input('Select an option: ')
 if operation == 'add':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, "+", number_2, "=", add(number_1, number_2))
+	print(number_1, "+", number_2, "=", number_1 + number_2)
 
 elif operation == 'sub':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, '-', number_2, '=', subtract(number_1, number_2))
+	print(number_1, '-', number_2, '=', number_1 - number_2)
 
 elif operation == 'mul':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, '*', number_2, '=', multiply(number_1, number_2))
+	print(number_1, 'x', number_2, '=', number_1 * number_2)
 
 elif operation == 'div':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, '/', number_2, '=', divide(number_1, number_2))
+	print(number_1, '÷', number_2, '=', number_1 / number_2)
 
 elif operation == 'pow':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, '**', number_2, '=', power(number_1, number_2))
+	print(number_1, '^', number_2, '=', number_1 ** number_2)
 
 elif operation == 'sq':
         number = int(input('Enter your number: '))
-	print('√', number, '=', sqaure_root(number))
+	import math
+	print('√', number, '=', math.sqrt(number))
         
 elif operation == 'mod':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, '%', number_2, '=', modulus(number_1, number_2))
+	print(number_1, '%', number_2, '=', number_1 % number_2)
         
 elif operation == 'fd':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
-	print(number_1, '//', number_2, '=', floor_division(number_1, number_2))
+	print(number_1, '//', number_2, '=', number_1 // number_2)
 
 elif operation == 'quit':
 	exit()
