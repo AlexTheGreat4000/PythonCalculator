@@ -53,7 +53,7 @@ elif operation == '8':
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '//', number_2, '=', number_1 // number_2)
 
-elif operation == 'quit':
+elif operation == 'q':
 	exit()
 
 else:
