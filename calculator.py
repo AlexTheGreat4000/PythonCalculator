@@ -1,55 +1,54 @@
-print('Welcome to Calculator')
-print('')
-print('Operations')
-print('')
-print('add  (Addiction)')
-print('sub  (Subtraction)')
-print('mul  (Multiplication)')
-print('div  (Division)')
-print('pow  (Power)')
-print('sq   (Sqaure Root)')
-print('mod  (Modulo)')
-print('fd   (Floor Division)')
-print('quit (Close Program)')
+print('''Welcome to Calculator
+
+Operations
+1. (Addiction)
+2. (Subtraction)
+3. (Multiplication)
+4. (Division)
+5. (Power)
+6. (Sqaure Root)
+7. (Modulo)
+8. (Floor Division)
+q  (Close Program)''')
 
 operation = input('Select an option: ')
 
-if operation == 'add':
+if operation == '1':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, "+", number_2, "=", number_1 + number_2)
 
-elif operation == 'sub':
+elif operation == '2':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '-', number_2, '=', number_1 - number_2)
 
-elif operation == 'mul':
+elif operation == '3':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, 'x', number_2, '=', number_1 * number_2)
 
-elif operation == 'div':
+elif operation == '4':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '÷', number_2, '=', number_1 / number_2)
 
-elif operation == 'pow':
+elif operation == '5':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '^', number_2, '=', number_1 ** number_2)
 
-elif operation == 'sq':
+elif operation == '6':
         number = int(input('Enter your number: '))
 	import math
 	print('√', number, '=', math.sqrt(number))
         
-elif operation == 'mod':
+elif operation == '7':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '%', number_2, '=', number_1 % number_2)
         
-elif operation == 'fd':
+elif operation == '8':
         number_1 = int(input('Enter your first number: '))
         number_2 = int(input('Enter your second number: '))
 	print(number_1, '//', number_2, '=', number_1 // number_2)
